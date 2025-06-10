@@ -1,0 +1,55 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("imagem3.png") no-repeat center center fixed;
+    background-size: 100% 100%;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilos do container de erro */
+.error-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 30px;
+    margin-top: 50px; /* Espaço entre o topo da página e o container de erro */
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.brand-black {
+    color: #333;
+}
+
+.brand-orange {
+    color: #D95A52;
+}
+
+.brand-white {
+    color: #D6E2FF;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #D95A52;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #333;
+}

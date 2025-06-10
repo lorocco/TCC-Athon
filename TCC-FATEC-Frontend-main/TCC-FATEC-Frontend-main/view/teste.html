@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <output id="API">Teste</output>
+    <script>
+        // fetch(`http://localhost:3000/likes`)
+        // .then(res => res.json())
+        // .then(resp => console.log(resp))
+        // .catch(error => document.getElementById('API').textContent= error.message);
+        
+        const email ='teste@teste'
+        const senha ='senha123'
+        fetch(`http://localhost:3000/login`, {
+        method: 'POST', 
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify({
+            emailPessoa: email,
+            senhaPessoa: senha
+        })
+        })
+        .then( resposta => console.log(resposta.json()))
+        .then( resp => console.log(resp))
+    </script>
+</body>
+</html>

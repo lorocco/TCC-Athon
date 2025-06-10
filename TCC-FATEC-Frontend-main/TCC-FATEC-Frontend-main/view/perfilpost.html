@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfilpost.css">
+    <script src="perfil.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <span id="logo">ath<span style="color: #D95E52;">on</span></span>
+      
+        <ul id="navigation">
+            <li><a href="index.html"><img src="casinha.png" alt="Ícone de Início"><span>Início</span></a></li>
+            <li><a href="fav.html"><img src="estrela.png" alt="Ícone de Favoritos"><span>Favoritos</span></a></li>
+            <li><a href="perfil.html"><img src="perfil.png" alt="Ícone de Perfil"><span>Perfil</span></a></li>
+            <li><a href="login.html"><img src="sair.png" alt="Ícone de Sair"><span>Sair</span></a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="left-column">
+            <div id="profile">
+                <div class="">
+                    <img src="http://18.117.141.141:3333/avatarNull.png" class="profile-image" alt="Foto de Perfil">
+                </div>
+                <h2>Nome do Usuário</h2>
+                <a href="perfil.html" id="edit-button">Editar Perfil</a>
+            </div>
+            <div class="box" id="info-box">
+                <h2>Informações do Usuário</h2>
+                <div class="profile-field">
+                    <p><strong>Nome completo:</strong> <span class="profile-name"></span></p>
+                    <p><strong>Data de nascimento:</strong> <span class="profile-date"></span></p>
+                    <p><strong>Modalidades esportivas:</strong> <span class="profile-esporte"></span></p>
+                    <p><strong>E-mail:</strong> <span class="profile-email"></span></p>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Seus Posts</h2>
+                <div class="posts">
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="profile-info">
+                            <img src="${imagem}" alt="Foto de Perfil" class="profile-image post-profile-image">
+                            <div class="name-info">
+                                <h3>${nome}</h3>
+                                <p class="small">${funcao}</p>
+                                <p class="small">${esporte}</p>
+                            </div>
+                            </div>
+                            <img src="estrela-black.png" alt="Ícone de Estrela" id=${id} class="star-icon" >
+                        </div> 
+                        <div class="contacts">
+                        <p>${texto}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../controller/perfil.js"></script>
+</body>
+</html>

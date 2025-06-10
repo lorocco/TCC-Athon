@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro - Rede Social</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<script src="register.js"></script>
+</head>
+<body>
+	<div class="form-container">
+		<h1><span class="brand-white">ath</span><span class="brand-orange">on</span></h1>
+		<form data-form>
+			<!-- Atleta -->
+			<div id="athlete-info" class="info-container">
+				
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email" required data-email><br>
+
+				<label for="password"> Senha: </label>
+				<input type="password" id="password" name="password" required data-senha><br>
+
+				<label for="fullname"> Nome:</label>
+				<input type="text" id="fullname" name="fullname" required data-nome><br>
+
+				<label for="birthdate"> Data de nascimento: </label>
+				<input type="date" id="birthdate" name="birthdate" required data-nascimento><br>
+
+				<label for="gender">Gênero</label>
+				<select id="gender" name="gender" required data-genero>
+					<option value="">	</option>
+					<option value="1">Masculino</option>
+					<option value="2">Feminino</option>
+					<option value="outro">Outro</option>
+				</select><br>
+
+				<label for="sport">Modalidades Praticadas:</label>
+				<select id="sport" name="sport" required data-esporte>
+					<option value="">	</option>
+					<option value="1">Basquete</option>
+					<option value="2">Futebol</option>
+					<option value="3">Volei</option>
+					<option value="4">Ciclismo</option>
+					<option value="5">Ginastica</option>
+					<option value="6">Skate</option>
+					<option value="other">Outro</option>
+				</select><br>
+
+				<label for="function">Função:‎ </label>
+				<select id="function" name="function" required data-funcao>
+					<option value="">	</option>
+					<option value="1">Atleta</option>
+					<option value="2">Empresa</option>
+					<option value="other">Outro</option>
+				</select>
+				<br />
+				<input type="checkbox" id="termo" required>
+				<label for="termo">Concordo com os <a href="# ">termos de uso e serviço</a></label>
+			 ‎<center> <button type="submit"> Cadastrar</button>
+			</form> <center/>
+
+		<div class="signup-link">
+			Já possui uma conta? <a href="login.html">Faça login aqui.</a>
+		</div>
+	</div>
+	<script type="module" src="../controller/cad.js"></script>
+</body>
+</html>

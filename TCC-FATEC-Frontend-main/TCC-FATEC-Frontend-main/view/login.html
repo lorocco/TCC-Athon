@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tela de Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="login.css">
+	<style>
+		.brand-white {
+			color: #D6E2FF;
+		}
+
+		.brand-orange {
+			color: #D95E52;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="form-container">
+			<h1><span class="brand-white">ath</span><span class="brand-orange">on</span></h1>
+			<form  data-form>
+				<label for="username">Nome de usuário ou email:</label>
+				<input type="text" id="username" name="username" required data-email>
+				<label for="password">Senha:</label>
+				<input type="password" id="password" name="password" required data-senha>
+				<button type="submit">Entrar</button><a>
+			</form>
+			<div class="signup-link">
+				<p>Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+			</div>
+		</div>
+	</div>
+	
+    <script  type="module" src="../controller/login.js"></script>
+</body>
+
+<!-- <script src="login.js"></script> -->
+</html>

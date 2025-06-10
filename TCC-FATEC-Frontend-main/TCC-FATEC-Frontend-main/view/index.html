@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <script src="script.js"></script> -->
+</head>
+<body>
+  <div id="menu">
+    <span id="logo"><span style="color: #D6E2FF;">ath</span><span style="color: #D95E52;">on</span></span>
+    <div id="search-bar">
+      <form data-form>
+      <input type="text" placeholder="Pesquisar" data-pesquisa>
+      <button type="submit">Buscar</button>
+    </form>
+    </div>
+    <ul id="navigation">
+      <li><a href="index.html"><img src="casinha.png" alt="Ícone de Início" class="small-icon"><span>Início</span></a></li>
+      <li><a href="fav.html"><img src="estrela.png" alt="Ícone de Favoritos" class="small-icon"><span>Favoritos</span></a></li>
+      <li><a href="perfilpost.html"><img src="perfil.png" alt="Ícone de Perfil" class="small-icon"><span>Perfil</span></a></li>
+      <li><a href="login.html"><img src="sair.png" alt="Ícone de Sair" class="small-icon"><span>Sair</span></a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div id="left-column">
+      <div id="profile">
+        <div id="cover-photo"></div>
+        <img src="http://18.117.141.141:3333/avatarNull.png" alt="Foto de Perfil" class="profile-image"><br>
+        <h2>Seu Nome</h2>
+        <p class="description"></p>
+      </div>
+    </div>
+    <div id="middle-column">
+      <form data-post>
+        <div id="post-form">
+          <textarea id="post-input" placeholder="Escreva algo aqui..." data-texto></textarea>
+          <button type="submit">Publicar</button>
+        </div>
+      </form>
+    </div>
+    <div id="right-column">
+      <!-- <div class="box">
+        <h2>Posts Mais Curtidos</h2>
+      </div>
+      <div class="box">
+        <h2>Hashtags</h2>
+      </div> -->
+    </div>
+  </div>
+  <script type="module"  src="../controller/listaPosts.js"></script>
+  <script type="module" src="../controller/addPost.js"> </script>
+</body>
+</html>

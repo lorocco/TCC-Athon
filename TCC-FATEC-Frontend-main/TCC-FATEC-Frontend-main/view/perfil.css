@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: #122D69;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 10%; /* Reduz a altura da barra de menu */
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: auto;
+}
+
+    #logo span {
+        color: #D6E2FF;
+    }
+
+        #logo span:last-child {
+            color: #D95E52;
+        }
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+    #search-bar input {
+        padding: 10px;
+        border-radius: 3px;
+        border: none;
+        margin-right: 5px;
+        width: 150px; /* Reduz a largura do campo de pesquisa */
+    }
+
+    #search-bar button {
+        padding: 10px 15px;
+        border-radius: 3px;
+        border: none;
+        background-color: #D95A52;
+        color: #fff;
+        font-size: 14px;
+    }
+
+#navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+    #navigation li {
+        margin-right: 20px;
+    }
+
+        #navigation li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            #navigation li a span {
+                margin-top: 5px;
+            }
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#left-column {
+    width: 100%;
+    background-color: #D95E52;
+    border-radius: 10px;
+    position: center;
+}
+
+#profile {
+    border: 1px solid #ccc;
+    padding: 0px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+    #profile img.profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 520px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 4px solid #fff;
+    }
+
+#cover-photo {
+    width: 99.99%;
+    height: 200px; /* Ajusta o tamanho da capa */
+    background-image: url("cover-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    border: 3px solid #fff;
+}
+
+.description {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.name-info {
+    margin-left: 10px;
+}
+
+    .name-info h3 {
+        margin: 0;
+    }
+
+    .name-info p.small {
+        margin: 0;
+        font-size: 12px;
+    }
+
+.star-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts {
+    margin-top: 10px;
+}
+
+#right-column {
+    width: 250px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #B5C9F8;
+    border-radius: 10px;
+}
+
+.small-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.post-profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.center-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-field {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px;
+}
+
+    .profile-field p {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .profile-field input[type="text"],
+    .profile-field input[type="date"],
+    .profile-field input[type="email"],
+    .profile-field input[type="password"] {
+        width: 30%; /* Reduz a largura dos campos */
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+/* Estiliza o botão Salvar */
+#save-button {
+    background-color: #122D69;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block; /* Faz o botão ocupar toda a largura disponível */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+

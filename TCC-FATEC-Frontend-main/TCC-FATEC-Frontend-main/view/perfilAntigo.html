@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="perfil.css">
+  <!-- <script src="script.js"></script> -->
+</head>
+<body>
+  <div id="menu">
+    <span id="logo"><span style="color: #D6E2FF;">ath</span><span style="color: #D95E52;">on</span></span>
+    <div id="search-bar">
+      <input type="text" placeholder="Pesquisar">
+      <button>Buscar</button>
+    </div>
+    <ul id="navigation">
+      <li><a href="index.html"><img src="casinha.png" alt="Ícone de Início" class="small-icon"><span>Início</span></a></li>
+      <li><a href="fav.html"><img src="estrela.png" alt="Ícone de Favoritos" class="small-icon"><span>Favoritos</span></a></li>
+      <li><a href="perfil.html"><img src="perfil.png" alt="Ícone de Perfil" class="small-icon"><span>Perfil</span></a></li>
+      <li><a href="login.html"><img src="sair.png" alt="Ícone de Sair" class="small-icon"><span>Sair</span></a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div id="left-column">
+      <div id="profile">
+        <div id="cover-photo"></div>
+        <img src="profile-picture.jpg" alt="Foto de Perfil" class="profile-image">
+        <div id="profile-info">
+          <h2>Seu Nome</h2>
+        <form data-form>
+          <p>Nome completo</p>
+          <input type="text" id="full-name-input" data-nome>
+          <p>Data de nascimento</p>
+          <input type="date" id="birth-date-input" data-nascimento>
+          <p>Modalidades esportivas</p>
+          <select id="esporte" name="esporte" required data-esporte>
+					<option value="1">Futbol</option>
+					<option value="2">Basquete</option>
+          <option value="3">Volei</option>
+          <option value="4">Ciclismo</option>
+					<option value="5">Outro</option>
+				</select>
+          <p>E-mail</p>
+          <input type="email" id="email-input" data-email>
+          <p>Senha</p>
+          <input type="password" id="password-input" data-senha>
+          <button type="submit"> Salvar alterações</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../controller/editaPerfil.js"></script>
+</body>
+</html>

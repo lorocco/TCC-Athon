@@ -1,0 +1,124 @@
+/* Estilos gerais */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url("imagem3.png") no-repeat center center fixed;
+	background-size: 100% 100%;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.brand-black {
+	color: #333;
+}
+
+.brand-orange {
+	color: #D95A52;
+}
+
+.brand-white {
+	color: #D6E2FF;
+}
+
+/* Estilos do formulário */
+.form-container {
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	position: absolute;
+	top: auto;
+	bottom: 50px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	max-width: 400px;
+	padding: 30px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+select {
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.button-row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.checkbox-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+button[type="submit"] {
+	background-color: #D95A52;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+	background-color: #333;
+}
+
+.signup-link {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.signup-link a {
+	color: #D95A52;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+.signup-link a:hover {
+	color: black;
+}

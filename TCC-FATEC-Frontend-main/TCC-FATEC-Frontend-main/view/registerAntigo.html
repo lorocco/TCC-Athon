@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro - Rede Social</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<script src="register.js"></script>
+</head>
+<body>
+	
+		<h1><span class="brand-white">ath</span><span class="brand-orange">on</span></h1>
+		<form data-form>
+			
+				<label for="fullname">Nome completo</label>
+				<input type="text" id="fullname" name="fullname" required data-nome>
+
+				<label for="birthdate">ㅤData de nascimento</label>
+				<input type="date" id="birthdate" name="birthdate" required data-nascimento>
+
+				<label for="email">Email</label>
+				<input type="text" id="email" name="email" required data-email>
+
+				<label for="gender">ㅤGênero</label>
+				<select id="gender" name="gender" required data-genero>
+					<option value="ㅤ">ㅤ	</option>
+					<option value="1">Masculino</option>
+					<option value="2">Feminino</option>
+					<option value="outro">Outro</option>
+				</select>
+				
+				<label for="funcao">Funcao</label>
+				<select id="funcao" name="funcao" required data-funcao >
+					<option value="1">Atleta</option>
+					<option value="2">Empresa</option>
+					<option value="outro">Outro</option>
+				</select>
+
+				<label for="esporte">Esporte</label>
+				<select id="esporte" name="esporte" required data-esporte>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">Outro</option>
+				</select>
+
+				<label for="password">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤSenha</label>
+				<input type="password" id="password" name="password" required data-senha>
+
+			
+
+			<button type="submit"> <a href="index.html">Cadastrar</button></a>
+		</form>
+
+		<div class="signup-link">
+			Já possui uma conta? <a href="login.html">Faça login aqui.</a>
+		</div>
+	
+	<script type="module" src="../controller/cad.js"></script>
+</body>
+</html>
